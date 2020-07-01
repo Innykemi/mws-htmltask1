@@ -1,0 +1,273 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: serif;
+    font-weight: 500;
+}
+
+/* Topbar */
+.topbar {
+    border-bottom: 1px solid #f0f0f0;
+}
+.topbar ul {
+    list-style: none;
+    margin: 0.6rem 0;
+    padding: 0 1rem;
+}
+.topbar ul li {
+    display: inline;
+    padding: 0.6rem 1rem;
+    color: #666;
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: #f0f0f0;
+}
+.topbar ul #menu-right {
+    float: right;
+}
+.topbar ul #menu-right li:first-child{
+    border-right: none;
+}
+.topbar ul #menu-right .social-icons i{
+    padding: 0 0.5rem;
+}
+
+/* Navbar */
+/* nav {
+    padding: 1rem;
+} */
+nav .wrapper {
+    padding: 2rem 1rem;
+}
+nav a.logo {
+    color: #202020;
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+}
+nav a:hover.logo,
+nav a:focus.logo,
+nav a:visited.logo {
+    text-decoration: none;
+    outline: none;
+}
+nav .navbar {
+    list-style: none;
+    margin: 0;
+    float: right;
+}
+nav .navbar li {
+    display: inline;
+    padding: 0 1rem;
+}
+nav .navbar .nav-btn li{
+    padding: 0 0.1rem;
+}
+nav .navbar button {
+    background-color: #2e6bdf;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 0;
+    outline: none;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(#2b3455,#090a11);
+    padding: 5rem;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.banner .desc {
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+/* Cards */
+.cards {
+    padding: 5rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.card-body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+}
+.card-body img {
+    margin-bottom: 1rem;
+    width: -webkit-fill-available;
+}
+.card-body aside{
+    text-align: center;
+}
+.card-body aside span {
+    color: #a2a2a2;
+}
+.card-body aside h4 {
+    color: #292929;
+}
+.card-body aside p {
+    color: #a8a8a8;
+}
+@media (max-width: 992px) { 
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+}
+@media (max-width: 768px) { 
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+}
+@media (max-width: 576px) { 
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+/* Countdown Section */
+.online-courses {
+    background: radial-gradient(#4f564c, #252f25);
+    /* height: 70vh; */
+    padding: 6rem 0 7rem;
+    color: #fff;
+    text-align: center;
+}
+.online-courses .intro {
+    margin-bottom: 1.8rem;
+}
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.count {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #363c34;
+    border: 2px solid white;
+    margin-right: 0.5rem;
+}
+.count h3{
+    font-family: sans-serif;
+    font-size: 2rem;
+    line-height: 0;
+    margin-bottom: 1.5rem;
+}
+.count .period {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.base-text p{
+    font-weight: 700;
+}
+.base-text .outline {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1rem 3rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #090c13;
+    padding: 3rem 1rem 0;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, fr);
+    grid-template-areas: 
+        "about about learning learn-grow engage legal"
+    ;
+    grid-gap: 15px;
+}
+.footer h4 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+}
+.footer p {
+    font-size: 0.9rem;
+    
+}
+.footer .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer .footer-links li {
+    margin-bottom: 0.5rem;
+}
+.footer-links li a {
+    color: #666;
+    
+    text-decoration: none;
+}
+.footer-links li a:hover {
+    color: #666;
+}
+.copyright {
+    background-color: #090c13;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    line-height: 0.6rem;
+}
+@media (max-width: 992px) { 
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "about about learning"
+            "learn-grow engage legal"
+        ;
+        grid-gap: 10px;
+    }
+}
+@media (max-width: 768px) { 
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            "about about"
+            "learning learn-grow"
+            "engage legal"
+        ;
+        grid-gap: 10px;
+    }
+}
+@media (max-width: 576px) { 
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-gap: 10px;
+    }
+}
